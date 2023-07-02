@@ -43,15 +43,15 @@
 			 .modal {
 				display: block;
 				position: absolute;
-				top: 38%;
-				left: 25%;
+				top: 41%;
+				left: 23%;
 				transform: translate(0) scale(0);
 				border: 1px solid rgba(0, 0, 0, 0.125);
 				border-radius: 10px;
-				z-index: 1500px;
+				z-index: 1200px;
 				background-color: #aeb9c2;
 				width: 600px;
-				height: 1000px;
+				height: 1150px;
 				max-width: 80%;
 						backdrop-filter: blur(16px) saturate(180%);
 						-webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -144,17 +144,21 @@
 
 <div class="modal" id="info">
   <div class="modal-header">
-	<div class="title">About this interactive graph</div>
+      <div class="title"><h3>About this interactive graph</h3></div>
 	<button onclick="closeModal('#info')" class="close-button">&times;</button>
   </div>
   <div class="modal-body">
 
-    <h4>The below graph is a representation of many theorems in a field of mathematics called <i>geometric number theory</i> (alternatively called lattice point geometry) and the mathematical connections between them. This beautiful corner of mathematics is unique in its austere simplicity and emergent complexity. Rather than doing mathematics on the whole set of real numbers (denoted &#8477;), or the higher dimensional extensions of the reals (denoted &#8477;<sup>n</sup>), geometric number theory restricts us to those numbers which have only integer components. That is, the <i>integer lattice</i>, denoted &#8484;<sup>n</sup>. Here, most of the theorems deal only with &#8484;<sup>2</sup> -- the two dimensional integer lattice.</h4>
+    <h4>The below graph represents a sliver of a field in mathematics called <i>geometric number theory</i> (alternatively called the “geometry of numbers” or “lattice point geometry”) by visually illustrating the connections between its theorems. Geometric number theory is largely the study of lattices, and this graph focuses on theorems regarding the 2D integer lattice: &#8484;<sup>2</sup>. From its structural restrictions, this beautiful corner of mathematics is unique in its austere simplicity and emergent complexity.</h4>
 
     <p>
     <h3>How to read the map</h3>
-    <h4>Each node in the network represents a theorem. That is, a mathematical statement pertaining to the integer lattice. These theorems rest on the firm foundation of mathematical proof, many building off one another. For example, we can use Euler's theorem for planar graphs to prove Pick's theorem so there is an arrow moving from the node for Euler's theorem to Pick's theorem. Note that not all theorems have nice names, so we have described them in as much detail is necessary when the corresponding node is highlighted using the mouse. Some theorems have a label "Ex_" which denotes a particular exercise in a particular course reader. These will likely be removed in short order and replaced with something more representative of the theorems they denote.</h4>
+    <h4>Each node in the network represents a theorem. That is, a mathematical statement pertaining to the integer lattice. These theorems rest on the firm foundation of mathematical proof, many building off one another. For example, we can use Euler's theorem for planar graphs to prove Pick's theorem so there is an arrow moving from the node for Euler's theorem to the node for Pick's theorem. Not every theorem has a nice succinct name, so we have described them in as much detail as possible. To access this information, simply hover over any node. Some theorems are labeled "Ex_,” denoting a particular exercise in a particular course reader. These will likely be removed in short order and replaced with labels more representative of the theorems they denote. </h4>
     </p>
+      <p>
+      <h3> The coloring
+      <h4>The graph coloring is rather subjective but is supposed to give a rough indication of how geometric number theory spans many different areas of mathematics. The color-key in the upper righthand corner of the page indicates the area of mathematics a given theorem (colored node) belongs to. These classifications are very rough! </h4>
+      </p>
       
   </div>
 </div>
